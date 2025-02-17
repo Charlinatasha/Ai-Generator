@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ai Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -13,7 +14,7 @@
         <h2>For when you need a little pick me up!</h2>
       </header>
       <div id="generator-container">
-        <form>
+        <form id="positive-quote-form">
           <input
             type="text"
             placeholder="What do you need support with?"
@@ -26,11 +27,7 @@
         </form>
       </div>
 
-      <div id="positive-statement">
-        add your positive statement here
-        <br />
-        add second line here
-      </div>
+      <div id="positive-statement"></div>
 
       <footer>
         This project was coded by
