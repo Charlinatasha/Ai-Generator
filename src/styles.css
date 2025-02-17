@@ -67,3 +67,6 @@ a:hover {
   font-size: 18px;
   line-height: 1.5;
 }
+#positive-statement strong {
+  color: #ea9abb;
+}
