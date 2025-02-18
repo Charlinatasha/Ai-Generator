@@ -11,44 +11,53 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>AI Daily Positive Reinforcement Generator</h1>
-      <h2>For when you need a little pick me up!</h2>
-    </header>
     <div id="container">
-      <div id="generator-container">
-        <form id="positive-quote-form">
-          <input
-            type="text"
-            placeholder="What do you need support with today?"
-            autofocus
-            required
-            autocomplete="off"
-            id="textInputElement"
-          />
-          <input type="submit" id="submitButton" />
-        </form>
-        <div id="hint">Hint: positive, work, money, family</div>
+      <div id="contents">
+        <header>
+          <h1>AI Daily Positive Reinforcement Generator</h1>
+          <h2>For when you need a little pick me up!</h2>
+        </header>
+
+        <div id="generator-container">
+          <form id="positive-quote-form">
+            <input
+              type="text"
+              placeholder="What do you need support with today?"
+              autofocus
+              required
+              autocomplete="off"
+              id="textInputElement"
+            />
+            <input type="submit" id="submitButton" />
+          </form>
+          <div id="hint">Hint: positive, work, money, family</div>
+          <div class="hidden" id="reset">
+            <a href="/" id="reset-page">Reset</a>
+          </div>
+        </div>
+
+        <div class="hidden" id="positive-statement"></div>
+
+        <footer>
+          This project was coded by
+          <a
+            href="https://www.linkedin.com/in/charli-lee-7aa589107"
+            target="_blank"
+            >Charli</a
+          >
+          and is open sourced on
+          <a
+            href="https://github.com/Charlinatasha/Ai-Generator"
+            target="_blank"
+            >GitHub</a
+          >and hosted on
+          <a href="https://charli-ai-generator.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </footer>
       </div>
 
-      <div class="hidden" id="positive-statement"></div>
-
-      <footer>
-        This project was coded by
-        <a
-          href="https://www.linkedin.com/in/charli-lee-7aa589107"
-          target="_blank"
-          >Charli</a
-        >
-        and is open sourced on
-        <a href="https://github.com/Charlinatasha/Ai-Generator" target="_blank"
-          >GitHub</a
-        >and hosted on
-        <a href="https://charli-ai-generator.netlify.app/" target="_blank"
-          >Netlify</a
-        >
-      </footer>
+      <script src="src/script.js"></script>
     </div>
-    <script src="src/script.js"></script>
   </body>
 </html>
