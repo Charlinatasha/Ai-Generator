@@ -16,8 +16,8 @@ h2 {
 }
 footer {
   text-align: center;
-  margin: 10px auto;
-  color: rgba(0, 0, 0, 0.5);
+  margin: 50px auto;
+  color: rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   font-size: 12px;
 }
@@ -28,6 +28,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 #generator-container {
   display: block;
   margin: 0 auto;
@@ -55,6 +56,14 @@ a:hover {
   color: #ea9abb;
   background-color: whitesmoke;
 }
+#hint {
+  margin-top: 5px;
+  margin-left: 3px;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0.4;
+}
+
 #positive-statement {
   display: block;
   margin: 20px auto 0 auto;
@@ -69,4 +78,20 @@ a:hover {
 }
 #positive-statement strong {
   color: #ea9abb;
+}
+.hidden {
+  display: none !important;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
+    <header>
+      <h1>AI Daily Positive Reinforcement Generator</h1>
+      <h2>For when you need a little pick me up!</h2>
+    </header>
     <div id="container">
-      <header>
-        <h1>AI Daily Positive Reinforcement Generator</h1>
-        <h2>For when you need a little pick me up!</h2>
-      </header>
       <div id="generator-container">
         <form id="positive-quote-form">
           <input
             type="text"
-            placeholder="What do you need support with?"
+            placeholder="What do you need support with today?"
             autofocus
             required
             autocomplete="off"
@@ -28,9 +28,10 @@
           />
           <input type="submit" id="submitButton" />
         </form>
+        <div id="hint">Hint: positive, work, money, family</div>
       </div>
 
-      <div id="positive-statement"></div>
+      <div class="hidden" id="positive-statement"></div>
 
       <footer>
         This project was coded by

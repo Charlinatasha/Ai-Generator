@@ -18,13 +18,10 @@ function generateQuote(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayQuote);
+  let affirmation = document.querySelector("#positive-statement");
+  affirmation.classList.remove("hidden");
 
-  new Typewriter("#positive-statement", {
-    strings: "Generating your personal affirmation....",
-    autoStart: true,
-    cursor: "",
-    delay: 1,
-  });
+  affirmation.innerHTML = `<div class="generating">⏳ Generating your personalised affirmation about ${userInstructions.value}....</div>`;
 }
 
 let inputElement = document.querySelector("#positive-quote-form");
